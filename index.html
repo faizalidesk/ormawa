@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cairin — Ajukan Anggaran Ormawa, Lacak Sampai Cair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="#home" class="logo">
+      <span class="logo__mark">✓</span>
+      <span class="logo__text">Cairin</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#fitur" class="nav-link">Fitur</a>
+      <a href="#cara-kerja" class="nav-link">Cara Kerja</a>
+      <a href="#dashboard" class="nav-link">Dashboard</a>
+      <a href="#testimoni" class="nav-link">Testimoni</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="#" class="link-ghost">Masuk</a>
+      <a href="#cara-kerja" class="btn btn--primary btn--sm">Ajukan Sekarang</a>
+      <button class="hamburger" id="hamburger" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#fitur" class="mobile-link">Fitur</a>
+    <a href="#cara-kerja" class="mobile-link">Cara Kerja</a>
+    <a href="#dashboard" class="mobile-link">Dashboard</a>
+    <a href="#testimoni" class="mobile-link">Testimoni</a>
+    <a href="#faq" class="mobile-link">FAQ</a>
+    <a href="#" class="btn btn--primary" style="width:100%;margin-top:10px;">Ajukan Sekarang</a>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+  <div class="container hero__inner">
+    <div class="hero__content reveal">
+      <span class="eyebrow">Untuk BEM, HMJ, dan UKM</span>
+      <h1 class="hero__title">Ajukan anggaran ormawa.<br>Lacak sampai cair.</h1>
+      <p class="hero__subtitle">
+        Satu platform untuk mengajukan proposal dana kegiatan, memantau setiap
+        tahap verifikasi, dan tahu persis kapan dana benar-benar cair —
+        tanpa bolak-balik ke ruang keuangan kampus.
+      </p>
+      <div class="hero__actions">
+        <a href="#cara-kerja" class="btn btn--primary btn--lg">Ajukan Proposal</a>
+        <a href="#fitur" class="btn btn--secondary btn--lg">Lihat Cara Kerja</a>
+      </div>
+      <div class="hero__trust">
+        Dipakai oleh bendahara ormawa di <strong>86 organisasi kampus</strong>
+      </div>
+    </div>
+
+    <!-- Signature element: live proposal tracking card -->
+    <div class="hero__visual reveal">
+      <div class="track-card" id="trackCard">
+        <div class="track-card__header">
+          <span class="track-card__id">#PRP-2026-0143</span>
+          <span class="track-card__badge" id="trackBadge">Diproses</span>
+        </div>
+        <h3 class="track-card__title">Lomba Debat Nasional</h3>
+        <p class="track-card__org">BEM Fakultas Ilmu Komunikasi</p>
+        <div class="track-card__amount">Rp 12.500.000</div>
+
+        <ul class="stepper" id="stepper">
+          <li class="stepper__step" data-step="0">
+            <span class="stepper__dot"></span>
+            <div>
+              <span class="stepper__label">Diajukan</span>
+              <span class="stepper__meta">18 Jul, 09.12</span>
+            </div>
+          </li>
+          <li class="stepper__step" data-step="1">
+            <span class="stepper__dot"></span>
+            <div>
+              <span class="stepper__label">Diverifikasi</span>
+              <span class="stepper__meta">19 Jul, 14.30</span>
+            </div>
+          </li>
+          <li class="stepper__step" data-step="2">
+            <span class="stepper__dot"></span>
+            <div>
+              <span class="stepper__label">Disetujui</span>
+              <span class="stepper__meta">21 Jul, 10.05</span>
+            </div>
+          </li>
+          <li class="stepper__step" data-step="3">
+            <span class="stepper__dot"></span>
+            <div>
+              <span class="stepper__label">Dicairkan</span>
+              <span class="stepper__meta">Menunggu</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="floating-chip floating-chip--1">🔔 Status diperbarui</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<section class="stats">
+  <div class="container stats__grid">
+    <div class="stat-card reveal">
+      <span class="stat-card__number" data-count="1240" data-suffix="+">0</span>
+      <span class="stat-card__label">Proposal diproses</span>
+    </div>
+    <div class="stat-card reveal">
+      <span class="stat-card__number" data-count="86" data-suffix="">0</span>
+      <span class="stat-card__label">Ormawa terdaftar</span>
+    </div>
+    <div class="stat-card reveal">
+      <span class="stat-card__number" data-count="32" data-suffix="" data-decimal="10">0</span>
+      <span class="stat-card__label">Rata-rata verifikasi (hari)</span>
+    </div>
+    <div class="stat-card reveal">
+      <span class="stat-card__number stat-card__number--text">Rp 4,1 M</span>
+      <span class="stat-card__label">Total dana tercatat cair</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FEATURES ===================== -->
+<section class="features" id="fitur">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Fitur</span>
+      <h2 class="section-title">Semua yang dibutuhkan bendahara ormawa</h2>
+      <p class="section-desc">Dari pengajuan pertama sampai laporan pertanggungjawaban, satu alur yang sama.</p>
+    </div>
+    <div class="feature-grid" id="featureGrid"></div>
+  </div>
+</section>
+
+<!-- ===================== CARA KERJA ===================== -->
+<section class="how" id="cara-kerja">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Cara Kerja</span>
+      <h2 class="section-title">Empat tahap, satu status yang selalu jelas</h2>
+      <p class="section-desc">Alur yang sama seperti kartu pelacakan di atas — tidak ada tahap tersembunyi.</p>
+    </div>
+    <div class="how-grid" id="howGrid"></div>
+  </div>
+</section>
+
+<!-- ===================== DASHBOARD PREVIEW ===================== -->
+<section class="dashboard" id="dashboard">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Dashboard</span>
+      <h2 class="section-title">Semua proposal, satu layar</h2>
+      <p class="section-desc">Bendahara melihat status setiap pengajuan tanpa perlu bertanya ke bagian keuangan.</p>
+    </div>
+
+    <div class="dash-panel reveal">
+      <div class="dash-panel__top">
+        <div class="dash-panel__tabs">
+          <span class="dash-tab dash-tab--active">Semua Proposal</span>
+          <span class="dash-tab">Menunggu Verifikasi</span>
+          <span class="dash-tab">Selesai Cair</span>
+        </div>
+        <div class="dash-panel__search">Cari proposal...</div>
+      </div>
+
+      <div class="dash-table">
+        <div class="dash-row dash-row--head">
+          <span>No. Proposal</span>
+          <span>Ormawa</span>
+          <span>Kegiatan</span>
+          <span>Nominal</span>
+          <span>Status</span>
+        </div>
+        <div id="dashRows"></div>
+      </div>
+
+      <div class="dash-panel__chart">
+        <span class="dash-chart__caption">Pencairan per bulan</span>
+        <div class="dash-chart" id="dashChart"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONI ===================== -->
+<section class="testimonials" id="testimoni">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Testimoni</span>
+      <h2 class="section-title">Dipercaya bendahara dan pengurus ormawa</h2>
+    </div>
+    <div class="testimonial-grid" id="testimonialGrid"></div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="cta">
+  <div class="container cta__inner reveal">
+    <h2 class="cta__title">Ormawa kamu masih pakai proposal kertas<br>dan grup WhatsApp berjubel?</h2>
+    <p class="cta__desc">Pindahkan alur pengajuan anggaran ke satu tempat yang bisa dilacak semua orang.</p>
+    <a href="#cara-kerja" class="btn btn--primary btn--lg">Mulai Ajukan Proposal</a>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="section-title">Pertanyaan yang sering diajukan</h2>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#home" class="logo">
+        <span class="logo__mark">✓</span>
+        <span class="logo__text">Cairin</span>
+      </a>
+      <p class="footer__tagline">Ajukan. Lacak. Cair.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Produk</h4>
+      <a href="#fitur">Fitur</a>
+      <a href="#cara-kerja">Cara Kerja</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Legal</h4>
+      <a href="#">Kebijakan Privasi</a>
+      <a href="#">Syarat Layanan</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> Cairin. Dibuat untuk ormawa yang ingin anggarannya terlacak jelas.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
